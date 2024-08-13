@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(53, 17, 56);
+    overflow: hidden;
+}
+nav{
+  margin: auto;
+  margin-top: 10px;
+    width: 80%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(69, 66, 66);
+    box-shadow: -3px -6px 23px rgb(26, 25, 25),-3px -6px 23px rgb(23, 22, 22),-3px -6px 23px white,-3px -6px 23px white;
+    border-radius: 20px;
+    position: static;
+    top:5px;
+}
+nav img{
+    height: 80%;
+    border-radius: 20px;
+}
+nav ul {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+nav ul li{
+    color:white;
+    list-style: none;
+    font-size: 1.5rem;
+}
+.movie{
+    width: 100%;
+   margin: auto;
+   display: flex;
+   justify-content: center;
+}
+.moviecard {
+    position: relative;
+    width: 200px;
+    height: 300px;
+    margin: 20px;
+    overflow: hidden;
+ 
+}
+
+.moviecard img {
+    width: 100%;
+    height: 100%;
+}
+
+.title {
+    position: absolute;
+    bottom: 40%;
+    left: 30px;
+    background-color: aliceblue;
+    box-shadow: 12px -12px 119px 36px rgba(3,3,3,1);
+    color: rgb(201, 25, 25);
+    text-align: center;
+    padding: 10px;
+    font-size: 1.8rem;
+    display: none; /* Initially hidden */
+    transition: 2s linear ease-out;
+    z-index: 10; /* Use a valid z-index */
+    width: min-content;
+    height: 50%;
+}
+
+.showTitle {
+    display: block; /* Display when hovered */
+}
+
